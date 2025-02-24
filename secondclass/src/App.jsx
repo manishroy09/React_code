@@ -1,16 +1,29 @@
+import myimg from './nature.jpg'
+import './App.css'
 
 function App() {
- 
+ let name = "manish Kumar"
+ let age = 21
 
+ let st = {
+  color:"Yellow",
+  backgroundColor:"black",
+  padding:"20px"
+ }
   return (
     <>
-   <h1>  Welcom to React js class</h1>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, vero?</p>
-   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt eius cumque eveniet ut aperiam magni deserunt, distinctio animi nulla blanditiis minus ipsum dolores quas neque eaque, enim, repellat quisquam numquam. Similique ea vitae sunt enim tempora. Quam ad sint nesciunt possimus labore consequatur velit asperiores nobis maiores aliquid. Non, nisi.</p>
-   <img src="nature.jpg" alt="" height="500px" />
+   <div className='navbar'>
+         <h1>Man</h1>
+         <ul>
+          <li>Home</li>
+          <li>Cart</li>
+          <li>Login</li>
+         </ul>
+   </div>
    </>
     
   )
+  
 }
 
 export default App
