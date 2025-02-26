@@ -1,7 +1,7 @@
-import myimg from './nature.jpg'
+// import myimg from './nature.jpg'
 import './App.css'
-
-import { About,Contact } from './About.jsx'
+import Gallery from './Gallery.jsx'
+import { About as Ab,Contact } from './About.jsx'
 
 function App() {
 //  let name = "manish Kumar"
@@ -22,11 +22,9 @@ function App() {
           <li>Login</li>
          </ul>
    </div>
-   <About/>
+   <Ab/>
    <Contact/>
-   {/* <Contact/>
-   <Gallary/>
-   <Services/> */}
+   <Gallery/>
    </>
    
   )
