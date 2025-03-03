@@ -1,9 +1,10 @@
 
 
-function Child3 (age){
+function Child3 ({age1}){
+    
     return (
         <>
-        <h1>My age is {age.age}</h1>
+        <h1>He is {age1} year old</h1>
         </>
     )
 }

@@ -1,11 +1,12 @@
 
 import Child3 from "./Child3.jsx"
 
-function Child2 (age){
+function Child2 (props){
+    let {age} = props
     return (
         <>
-        <h1>My age is {age.age} </h1>
-        <Child3  age={age.age} />
+        <h1>My age is {age} </h1>
+        <Child3  age1={age} />
         </>
     )
 }
