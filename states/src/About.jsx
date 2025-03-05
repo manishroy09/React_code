@@ -18,7 +18,7 @@ function About (){
         <button onClick={()=>ChangeColor("black")}>dark color</button>
         <button onClick={()=>ChangeColor("white")}>Ligth color</button>
 
-        <h1 style={{ height:"20vh", display:dis}}>{dis}</h1>
+        <h1 style={{  display:dis}}>Happy Birthday</h1>
         <button onClick={()=>setdisplay("none")}>Hide</button>
         <button onClick={()=>setdisplay("block")}>Show</button>
         </div>
