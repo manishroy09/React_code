@@ -1,4 +1,5 @@
 import { useState } from "react"
+import About from "./About.jsx"
 
 
 
@@ -34,6 +35,7 @@ function App (){
     <button onClick={()=>ChangeColor("yellow")}>Yellow</button>
     <button onClick={()=>ChangeColor("pink")}>Pink</button>
     <button onClick={()=>ChangeColor("lightblue")}>light Blue</button>
+    <About/>
     </div>
     </>
   )
