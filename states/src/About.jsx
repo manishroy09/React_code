@@ -7,7 +7,7 @@ function About (){
     })
     let [num,setNum] = useState([1,5,6,7,8])
     let [color, ChangeColor] = useState("")
-    
+    let [dis, setdisplay] = useState("display")
     return(
         <>
         <div style={{height:"100vh", backgroundColor:color}}>
@@ -17,7 +17,10 @@ function About (){
         <button onClick={()=>setNum(["Manish","Roy"])}>Set array</button>
         <button onClick={()=>ChangeColor("black")}>dark color</button>
         <button onClick={()=>ChangeColor("white")}>Ligth color</button>
-        {/* <button onClick={()=>setNum(num[0]=10)}>Update array</button> */}
+
+        <h1 style={{ height:"20vh", display:dis}}>{dis}</h1>
+        <button onClick={()=>setdisplay("none")}>Hide</button>
+        <button onClick={()=>setdisplay("block")}>Show</button>
         </div>
         </>
     )
