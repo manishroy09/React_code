@@ -1,3 +1,4 @@
+import Img from "./Components/img"
 import New from "./Components/New"
 
 
@@ -5,7 +6,8 @@ import New from "./Components/New"
 function App(){
   return(
     <>
-    <New/>
+    <New/><br />
+    <Img/>
     </>
   )
 }
