@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, Outlet } from "react-router-dom"
 import "./App.css"
 
 
@@ -16,6 +16,13 @@ function Navbar(){
                 <li><Link to="/login" style={{textDecoration : "none" , color:"white"}}> Login </Link></li>
             </ul>
         </nav>
+
+        <Outlet/>
+
+
+        <footer>
+            <h1>Footer Section</h1>
+        </footer>
         </>
     )
 }

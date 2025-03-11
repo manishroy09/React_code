@@ -11,14 +11,15 @@ import Login from "./Login"
 function App(){
   return (
     <>
-    <Navbar/>
+    
     <Routes>
-      
+      <Route path="/" element={<Navbar/>}>
       <Route index element={ <Home/> } />
       <Route path="/about" element={ <About/> } />
       <Route path="/services" element={ <Services/> } />
       <Route path="/cart" element={ <Cart/> } />
       <Route path="/login" element={ <Login/> } />
+      </Route>
     </Routes>
     </>
   )
