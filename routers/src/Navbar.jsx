@@ -11,7 +11,7 @@ function Navbar(){
             <ul>
                 <li> <Link to="/" style={{textDecoration : "none" , color:"white"}} > Home </Link></li>
                 <li><Link to="/about" style={{textDecoration : "none" , color:"white"}}> About </Link></li>
-                <li><Link to="/services" style={{textDecoration : "none" , color:"white"}}> Services </Link></li>
+                
                 <li><Link to="/cart" style={{textDecoration : "none" , color:"white"}}> Cart </Link></li>
                 <li><Link to="/login" style={{textDecoration : "none" , color:"white"}}> Login </Link></li>
             </ul>
