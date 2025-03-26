@@ -11,9 +11,9 @@ function About(){
     return(
         <>
         <h1>About page </h1>
-        <ul>
+        
         <button onClick={servicee}>Service</button>
-        </ul>
+      
         </>
     )
 }

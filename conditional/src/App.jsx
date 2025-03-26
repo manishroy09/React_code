@@ -1,4 +1,4 @@
-import Img from "./Components/img"
+import Img from "./Components/Img.jsx"
 import New from "./Components/New"
 
 
