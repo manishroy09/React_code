@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import Form from './Form'
 import Data from './Data'
+import Login from './Login'
 
 
 
@@ -29,7 +30,7 @@ function App() {
        setUserdata(localdata)
     },[finalSubmit])
      
-
+    
 
   return (
     <>
@@ -53,9 +54,12 @@ function App() {
       <h1>User name : {userdataa.username}</h1>
        <h1> Age : {userdataa.age}</h1>
        <h1> Address :{userdataa.add}</h1>
+
      {/* <Form/>
 
      <Data/> */}
+
+     <Login/>
     </>
 
   
