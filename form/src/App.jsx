@@ -1,5 +1,5 @@
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Form from './Form'
 import Data from './Data'
@@ -20,10 +20,20 @@ function App() {
     console.log(frmdata)
     localStorage.setItem("userdata",JSON.stringify(frmdata))
   }
+   let [userdataa,setUserdata] = useState({})
+  //  console.log(userdataa);
+   
+
+    useEffect(()=>{
+      let localdata = JSON.parse(localStorage.getItem('userdata'))
+       setUserdata(localdata)
+    },[finalSubmit])
+     
+
 
   return (
     <>
-     <h1>Name is : {frmdata.username} </h1>
+     {/* <h1>Name is : {frmdata.username} </h1> */}
 
      <form onSubmit={finalSubmit}>
       <label htmlFor="">Name</label>
@@ -38,10 +48,14 @@ function App() {
       <input type="submit" value="Submit" />
 
      </form>
+      <hr />
 
-     <Form/>
+      <h1>User name : {userdataa.username}</h1>
+       <h1> Age : {userdataa.age}</h1>
+       <h1> Address :{userdataa.add}</h1>
+     {/* <Form/>
 
-     <Data/>
+     <Data/> */}
     </>
 
   
