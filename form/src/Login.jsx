@@ -3,31 +3,35 @@ import LoginValid from './LoginValid';
 
 
 let sanddata = createContext();
-let [frmdata, setfrmdat] = useState({
-    username:"", pass:""
-})
 
-function formdata(e){
-   const {name, value} =e.target
-   setfrmdat({...frmdata, [name]:value})
-}
-
-function finalSubmit(e){
-    e.preventDefault()
-    console.log(frmdata)
-    localStorage.setItem("userdata",JSON.stringify(frmdata))
-}
-
-let [data,setUserdata] = useState({})
-  
-   
-
-    useEffect(()=>{
-      let localdata = JSON.parse(localStorage.getItem('userdata'))
-       setUserdata(localdata)
-    },[finalSubmit])
 
 const Login = () => {
+   
+ let [data,setUserdata] = useState({})
+ let [frmdata, setfrmdat] = useState({
+  username:"", pass:""
+})
+   
+
+  function formdata(e){
+    const {name, value} =e.target
+    setfrmdat({...frmdata, [name]:value})
+ }
+ 
+ function finalSubmit(e){
+     e.preventDefault()
+     console.log(frmdata)
+     localStorage.setItem("userdata",JSON.stringify(frmdata))
+ }
+
+    
+ 
+     useEffect(()=>{
+       let localdata = JSON.parse(localStorage.getItem('userdata'))
+        setUserdata(localdata)
+     },[finalSubmit])
+
+
   return (
     <>
     <form action="finalSubmit">
