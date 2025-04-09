@@ -8,8 +8,9 @@ let sanddata = createContext();
 const Login = () => {
    
  let [data,setUserdata] = useState({})
+
  let [frmdata, setfrmdat] = useState({
-  username:"", pass:""
+  user:"", pass:""
 })
    
 
@@ -34,9 +35,9 @@ const Login = () => {
 
   return (
     <>
-    <form action="finalSubmit">
+    <form onSubmit={finalSubmit}>
     <label htmlFor="">UserName : </label>
-    <input type="text" name='username' onChange={formdata} /><br /><br />
+    <input type="text" name='user' onChange={formdata} /><br /><br />
 
     <label htmlFor="">Password</label>
     <input type="text" name='pass' onChange={formdata} /><br /><br />
