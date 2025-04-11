@@ -3,12 +3,12 @@ import LoginValid from './LoginValid';
 import { useNavigate } from 'react-router-dom';
 
 
-let sanddata = createContext();
+// let sanddata = createContext();
 
 
 const Login = () => {
    
- let [data,setUserdata] = useState({})
+//  let [data,setUserdata] = useState({})
 
  let navigator =useNavigate()
 
@@ -53,4 +53,4 @@ const Login = () => {
 }
 
 export default Login
-export {sanddata}
+// export {sanddata}

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { sanddata } from './Login'
+// import { sanddata } from './Login'
 
 
 
@@ -11,7 +11,9 @@ const LoginValid = () => {
    useEffect(()=>{
        let localdata = JSON.parse(localStorage.getItem('userdata'))
         // setUserdata(localdata)
-     },[onsubmit])
+     },[])
+
+     
     
 let [inputdata, setinputdata] = useState({
   user:"", pass:""
@@ -22,11 +24,12 @@ function inputValue(e){
 }
 function onsubmit(e){
   e.preventDefault();
-  if(inputdata.user!=localdata.user || inputdata.pass!=localdata.pass){
-      alert("User NOt Found")
-  }else{
-      alert("login Success")
-  }
+ 
+}
+if(inputdata.user!=localdata.user || inputdata.pass!=localdata.pass){
+  alert("User NOt Found")
+}else{
+  alert("login Success")
 }
 
   return (
