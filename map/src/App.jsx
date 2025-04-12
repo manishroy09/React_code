@@ -15,7 +15,7 @@ const App = () => {
     <>
     <div style={{display:"flex", gap:"20px"}}>
         {
-          product.map((e)=>{return <div style={{border:"10px soldi black",backgroundColor:"goldenrod", padding:"20px"}}>
+          product.map((e)=>{return <div style={{ border:"5px solid black",backgroundColor:"greenyellow", padding:"20px", borderTopLeftRadius:"30px",borderBottomRightRadius:"30px"}}>
             <h1>Product Name : {e.pname} </h1>
             <h1>Product Price : {e.pprice} </h1>
             <img src={e.pimg} alt="" /><br />
