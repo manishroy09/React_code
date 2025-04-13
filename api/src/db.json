@@ -1,0 +1,16 @@
+{
+    "userdata" :[
+        {
+            "uname":"Manish Kumar",
+            "age": 21,
+            "contact": 620546,
+            "city": "Bihar"
+        },
+        {
+            "uname":"Mohit Yadav",
+            "age": 21,
+            "contact": 6245345356,
+            "city": "Bhopal"
+        }
+    ]
+}
