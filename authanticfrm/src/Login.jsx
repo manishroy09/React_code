@@ -3,12 +3,12 @@ import LoginValid from './LoginValid';
 import { useNavigate } from 'react-router-dom';
 
 
-// let sanddata = createContext();
+
 
 
 const Login = () => {
    
-//  let [data,setUserdata] = useState({})
+
 
  let navigator =useNavigate()
 
@@ -45,12 +45,9 @@ const Login = () => {
 
     <input type="submit" value="submit" />
     </form>
-    {/* <sanddata.Provider value={data}>
-     <LoginValid/>
-    </sanddata.Provider> */}
+    
     </>
   )
 }
 
 export default Login
-// export {sanddata}
