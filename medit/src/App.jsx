@@ -9,7 +9,11 @@ function App() {
 
   return (
     <>
-     <Navbar/>
+     <Routes>
+      <Route path="/" element={<Navbar/>} />
+      <Route index element={ <Home/>} />
+      <Route path='/' />
+     </Routes>
     </>
   )
 }
