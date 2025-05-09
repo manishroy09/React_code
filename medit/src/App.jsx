@@ -2,7 +2,11 @@ import { useState } from 'react'
 
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
-import { Navbar } from 'react-bootstrap'
+
+import Home from "./Component/Home"
+import Cart from "./Component/Cart"
+import Profile from "./Component/Profile"
+import Navbar from "./Component/Navbar"
 
 function App() {
   
@@ -12,7 +16,8 @@ function App() {
      <Routes>
       <Route path="/" element={<Navbar/>} />
       <Route index element={ <Home/>} />
-      <Route path='/' />
+      <Route path='/cart' element={ <Cart/>} />
+      <Route path="/Profile" element={ <Profile/>} />
      </Routes>
     </>
   )
